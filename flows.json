@@ -1,0 +1,2097 @@
+[
+    {
+        "id": "da7359ff5319d330",
+        "type": "tab",
+        "label": "Lights Living Room",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a8112f1ad24922e2",
+        "type": "tab",
+        "label": "Lights Bedroom",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4391f46e3816b1fb",
+        "type": "tab",
+        "label": "Watering",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "766377350dfaef82",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e6646c01966be1ef",
+        "type": "tab",
+        "label": "Alarm",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "aa146f4d.b53ca",
+        "type": "ui_tab",
+        "name": "Office",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "d95086b322d2aba9",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7cc27c9e116eb12e",
+        "type": "ui_tab",
+        "name": "Office",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "f8bdb2d672e2f84d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "zigbee2mqtt",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c8d019173ba0589d",
+        "type": "zigbee2mqtt-server",
+        "name": "z2m-server",
+        "host": "host.docker.internal",
+        "mqtt_port": "1883",
+        "mqtt_username": "",
+        "mqtt_password": "",
+        "tls": "",
+        "usetls": false,
+        "base_topic": "zigbee2mqtt"
+    },
+    {
+        "id": "fa20012a10caef85",
+        "type": "yeelight-compat-hue-config",
+        "hostname": "192.168.1.113",
+        "port": "55443",
+        "name": "strip"
+    },
+    {
+        "id": "36e9258c260a1eae",
+        "type": "yeelight-compat-hue-config",
+        "hostname": "192.168.1.112",
+        "port": "55443",
+        "name": "kitchen"
+    },
+    {
+        "id": "63cc4d4410fe3626",
+        "type": "yeelight-compat-hue-config",
+        "hostname": "192.168.1.111",
+        "port": "55443",
+        "name": "floor"
+    },
+    {
+        "id": "f79e089bb18fbc7e",
+        "type": "yeelight-compat-hue-config",
+        "hostname": "192.168.1.110",
+        "port": "55443",
+        "name": "ceil"
+    },
+    {
+        "id": "286106aefd1f169a",
+        "type": "yeelight-compat-hue-config",
+        "hostname": "192.168.1.120",
+        "port": "55443",
+        "name": "bedceil"
+    },
+    {
+        "id": "cdd79b9158822142",
+        "type": "yeelight-compat-hue-config",
+        "hostname": "192.168.1.121",
+        "port": "55443",
+        "name": "bedfloor"
+    },
+    {
+        "id": "58bea9f1171fc514",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "25466c0772f68d25",
+        "type": "ui_group",
+        "name": "Alarm",
+        "tab": "58bea9f1171fc514",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0b46abb7160e6b90",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default"
+    },
+    {
+        "id": "1eb140c99ad42e39",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "a20d0ce55fd0b462",
+        "type": "ui-page",
+        "name": "Page N",
+        "ui": "0b46abb7160e6b90",
+        "path": "/pageN",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "1eb140c99ad42e39",
+        "order": -1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "3249e3b465415aab",
+        "type": "ui-group",
+        "name": "My Group",
+        "page": "a20d0ce55fd0b462",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "525bf94235e166eb",
+        "type": "zigbee2mqtt-in",
+        "z": "da7359ff5319d330",
+        "name": "Ikea_remote_action",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "",
+        "device_id": "0xcc86ecfffe7f2a27",
+        "state": "0",
+        "outputAtStartup": true,
+        "filterChanges": false,
+        "x": 390,
+        "y": 620,
+        "wires": [
+            [
+                "259a394e726d492f",
+                "82618e441a96a2d3"
+            ]
+        ]
+    },
+    {
+        "id": "c1cbf684d19041f2",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Device controller",
+        "func": "id = 2;\nconst init = {\n    on:true,\n    bri:5,\n    colormode:\"ct\",\n    ct:2842,\n    hex:\"#FFAC63\",\n    hue:5111,\n    sat:156,\n    duration:500\n};\n\nconst red = {\n    on: true,\n    bri: 204,\n    colormode:\"rgb\",\n    hex: \"#FF0000\",\n    hue: 0,\n    sat: 0,\n    duration: 80,\n};\nconst curConf = flow.get(`conf[${id}]`) || init;\nvar conf = curConf;\nconst oldConf = conf;\nvar conDeviceId = flow.get(\"device\")  || 0;\nvar oldDeviceId = flow.get(\"oldDevice\")  || 0;\n\nasync function updateConf() {\n    flow.set(`conf[${id}]`, conf);\n    msg.payload = conf;\n    await node.send(msg);\n    await delay(10);\n}\n\nasync function selectionFeedback() {\n    flow.set(\"oldDevice\", id);\n    flow.set(`busy[${id}]`, true);\n    conf=red;\n    await updateConf()\n    await delay(500);\n    conf=oldConf;\n    await updateConf();\n    flow.set(`busy[${id}]`, false);\n}\n\nasync function turnOn() {\n    conf.on = true;\n    await updateConf();  \n}\n\nasync function turnOff() {\n    conf.on = false;\n    await updateConf();  \n}\n\nif(conDeviceId == id) {\n    if ((conDeviceId - oldDeviceId) != 0){\n        await selectionFeedback();\n    }\n    \n    switch(msg.payload.action){\n    case (\"on\") :\n            await turnOn();\n            break;\n    \n    \n    case (\"off\") :\n            await turnOff();\n            break;\n            \n    case (\"brightness_move_up\") :\n            if(conf.on){\n                let brHold = flow.get(`brHold[${id}]`);\n                while(flow.get(`brHold[${id}]`) === \"up\"){\n                    conf.bri=conf.bri + 25;\n                    if(conf.bri > 255){\n                        conf.bri = 255\n                    }\n                    await updateConf();\n                    await delay(1000);\n                    brHold = flow.get(`brHold[${id}]`);\n                }\n            }\n            break;\n            \n    case (\"brightness_move_down\") :\n            if(conf.on){\n                let brHold = flow.get(`brHold[${id}]`);\n                while(brHold === \"down\"){\n                    conf.bri=conf.bri - 25;\n                    if(conf.bri < 1){\n                        conf.bri = 1\n                    }\n                    await updateConf();\n                    await delay(1000);\n                    brHold = flow.get(`brHold[${id}]`);\n                }\n            }\n            break;\n    }\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 1070,
+        "y": 640,
+        "wires": [
+            [
+                "7f6d51651002f376"
+            ]
+        ]
+    },
+    {
+        "id": "4f12091602556b59",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Device enumerator",
+        "func": "var currentDevice = flow.get(\"device\") || 0;\nvar deviceCount = 4;\n\nif(msg.payload.action === \"arrow_right_click\") {\n  currentDevice ++;\n  if(currentDevice > deviceCount - 1) {\n    currentDevice = 0;\n  }\n  flow.set(\"device\", currentDevice);\n}else if(msg.payload.action === \"arrow_left_click\") {\n  currentDevice --;\n  if(currentDevice < 0) {\n    currentDevice = deviceCount - 1;\n  }\n  flow.set(\"device\", currentDevice);\n}",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "1eb6d94a565545eb",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Device controller",
+        "func": "id = 1;\nconst init = {\n    on:true,\n    bri:181,\n    colormode:\"ct\",\n    ct:2842,\n    hex:\"#FFAC63\",\n    hue:5111,\n    sat:156,\n    duration:500\n};\n\nconst red = {\n    on: true,\n    bri: 204,\n    colormode:\"rgb\",\n    hex: \"#FF0000\",\n    hue: 0,\n    sat: 0,\n    duration: 80,\n};\nconst curConf = flow.get(`conf[${id}]`) || init;\nvar conf = curConf;\nconst oldConf = conf;\nvar conDeviceId = flow.get(\"device\")  || 0;\nvar oldDeviceId = flow.get(\"oldDevice\")  || 0;\n\nasync function updateConf() {\n    flow.set(`conf[${id}]`, conf);\n    msg.payload = conf;\n    await node.send(msg);\n    await delay(10);\n}\n\nasync function selectionFeedback() {\n    flow.set(\"oldDevice\", id);\n    flow.set(`busy[${id}]`, true);\n    conf=red;\n    await updateConf()\n    await delay(500);\n    conf=oldConf;\n    await updateConf();\n    flow.set(`busy[${id}]`, false);\n}\n\nasync function turnOn() {\n    conf.on = true;\n    await updateConf();  \n}\n\nasync function turnOff() {\n    conf.on = false;\n    await updateConf();  \n}\n\nif(conDeviceId == id) {\n    if ((conDeviceId - oldDeviceId) != 0){\n        await selectionFeedback();\n    }\n    \n    switch(msg.payload.action){\n    case (\"on\") :\n            await turnOn();\n            break;\n    \n    \n    case (\"off\") :\n            await turnOff();\n            break;;\n            \n    case (\"brightness_move_up\") :\n            if(conf.on){\n                let brHold = flow.get(`brHold[${id}]`);\n                while(flow.get(`brHold[${id}]`) === \"up\"){\n                    conf.bri=conf.bri + 25;\n                    if(conf.bri > 255){\n                        conf.bri = 255\n                    }\n                    await updateConf();\n                    await delay(1000);\n                    brHold = flow.get(`brHold[${id}]`);\n                }\n            }\n            break;\n            \n    case (\"brightness_move_down\") :\n            if(conf.on){\n                let brHold = flow.get(`brHold[${id}]`);\n                while(brHold === \"down\"){\n                    conf.bri=conf.bri - 25;\n                    if(conf.bri < 1){\n                        conf.bri = 1\n                    }\n                    await updateConf();\n                    await delay(1000);\n                    brHold = flow.get(`brHold[${id}]`);\n                }\n            }\n            break;\n    }\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 1070,
+        "y": 600,
+        "wires": [
+            [
+                "63be13272f1224f8"
+            ]
+        ]
+    },
+    {
+        "id": "63be13272f1224f8",
+        "type": "yeelight-compat-hue-out",
+        "z": "da7359ff5319d330",
+        "name": "strip",
+        "server": "fa20012a10caef85",
+        "x": 1290,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7f6d51651002f376",
+        "type": "yeelight-compat-hue-out",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "server": "36e9258c260a1eae",
+        "x": 1300,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a864467e9733fa53",
+        "type": "yeelight-compat-hue-out",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "server": "63cc4d4410fe3626",
+        "x": 1290,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "be5d4394cf555eb4",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Device controller",
+        "func": "id = 3;\nconst init = {\n    on:true,\n    bri:3,\n    colormode:\"ct\",\n    ct:2842,\n    hex:\"#FFAC63\",\n    hue:5111,\n    sat:156,\n    duration:500\n};\n\nconst red = {\n    on: true,\n    bri: 204,\n    colormode:\"rgb\",\n    hex: \"#FF0000\",\n    hue: 0,\n    sat: 0,\n    duration: 80,\n};\nconst curConf = flow.get(`conf[${id}]`) || init;\nvar conf = curConf;\nconst oldConf = conf;\nvar conDeviceId = flow.get(\"device\")  || 0;\nvar oldDeviceId = flow.get(\"oldDevice\")  || 0;\n\nasync function updateConf() {\n    flow.set(`conf[${id}]`, conf);\n    msg.payload = conf;\n    await node.send(msg);\n    await delay(10);\n}\n\nasync function selectionFeedback() {\n    flow.set(\"oldDevice\", id);\n    flow.set(`busy[${id}]`, true);\n    conf=red;\n    await updateConf()\n    await delay(500);\n    conf=oldConf;\n    await updateConf();\n    flow.set(`busy[${id}]`, false);\n}\n\nasync function turnOn() {\n    conf.on = true;\n    await updateConf();  \n}\n\nasync function turnOff() {\n    conf.on = false;\n    await updateConf();  \n}\n\nif(conDeviceId == id) {\n    if ((conDeviceId - oldDeviceId) != 0){\n        await selectionFeedback();\n    }\n    \n    switch(msg.payload.action){\n    case (\"on\") :\n            await turnOn();\n            break;\n    \n    \n    case (\"off\") :\n            await turnOff();\n            break;\n            \n    case (\"brightness_move_up\") :\n            if(conf.on){\n                let brHold = flow.get(`brHold[${id}]`);\n                while(flow.get(`brHold[${id}]`) === \"up\"){\n                    conf.bri=conf.bri + 25;\n                    if(conf.bri > 255){\n                        conf.bri = 255\n                    }\n                    await updateConf();\n                    await delay(1000);\n                    brHold = flow.get(`brHold[${id}]`);\n                }\n            }\n            break;\n            \n    case (\"brightness_move_down\") :\n            if(conf.on){\n                let brHold = flow.get(`brHold[${id}]`);\n                while(brHold === \"down\"){\n                    conf.bri=conf.bri - 25;\n                    if(conf.bri < 1){\n                        conf.bri = 1\n                    }\n                    await updateConf();\n                    await delay(1000);\n                    brHold = flow.get(`brHold[${id}]`);\n                }\n            }\n            break;\n    }\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 1070,
+        "y": 680,
+        "wires": [
+            [
+                "a864467e9733fa53"
+            ]
+        ]
+    },
+    {
+        "id": "a94ebad08e741ccc",
+        "type": "yeelight-compat-hue-out",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "server": "f79e089bb18fbc7e",
+        "x": 1290,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "b922185c0c976076",
+        "type": "yeelight-compat-hue-state",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "server": "fa20012a10caef85",
+        "x": 1290,
+        "y": 960,
+        "wires": [
+            [
+                "c461d11dfb8cba10"
+            ]
+        ]
+    },
+    {
+        "id": "fd413a0323a80486",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Refresh state",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nconst id = 0;\nvar dummy = {payload: 1,}\n\nasync function refreshState() {\n    while(true) {\n        if(!flow.get(`busy[${id}]`)) {\n            node.send(dummy);\n        }\n        await delay(30000);\n    }\n}\n\nawait refreshState();",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 1050,
+        "y": 840,
+        "wires": [
+            [
+                "110631ceb7444ccf"
+            ]
+        ]
+    },
+    {
+        "id": "545ceb645c9e1150",
+        "type": "yeelight-compat-hue-state",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "server": "36e9258c260a1eae",
+        "x": 1300,
+        "y": 920,
+        "wires": [
+            [
+                "e79092ecb280b2d2"
+            ]
+        ]
+    },
+    {
+        "id": "8cc449f107d2d21c",
+        "type": "yeelight-compat-hue-state",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "server": "63cc4d4410fe3626",
+        "x": 1290,
+        "y": 880,
+        "wires": [
+            [
+                "abb5cbc1f3a08019"
+            ]
+        ]
+    },
+    {
+        "id": "110631ceb7444ccf",
+        "type": "yeelight-compat-hue-state",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "server": "f79e089bb18fbc7e",
+        "x": 1290,
+        "y": 840,
+        "wires": [
+            [
+                "6e4eaa039aa5104d"
+            ]
+        ]
+    },
+    {
+        "id": "259a394e726d492f",
+        "type": "delay",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "0.7",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 620,
+        "wires": [
+            [
+                "4f12091602556b59",
+                "108b5aaa22f04ac2",
+                "53af785921fba0fb",
+                "297ab44efb63a6b8",
+                "0886ad10e7a9b499",
+                "734edda9ccd7aa0d"
+            ]
+        ]
+    },
+    {
+        "id": "f53381df8e4df849",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Device controller",
+        "func": "id = 0;\nconst init = {\n    on:true,\n    bri:50,\n    colormode:\"ct\",\n    ct:2842,\n    hex:\"#FFAC63\",\n    hue:5111,\n    sat:156,\n    duration:500\n};\n\nconst red = {\n    on: true,\n    bri: 204,\n    colormode:\"rgb\",\n    hex: \"#FF0000\",\n    hue: 0,\n    sat: 0,\n    duration: 80,\n};\nconst curConf = flow.get(`conf[${id}]`) || init;\nvar conf = curConf;\nconst oldConf = conf;\nvar conDeviceId = flow.get(\"device\")  || 0;\nvar oldDeviceId = flow.get(\"oldDevice\")  || 0;\n\nasync function updateConf() {\n    flow.set(`conf[${id}]`, conf);\n    msg.payload = conf;\n    await node.send(msg);\n    await delay(10);\n}\n\nasync function selectionFeedback() {\n    flow.set(\"oldDevice\", id);\n    flow.set(`busy[${id}]`, true);\n    conf=red;\n    await updateConf()\n    await delay(500);\n    conf=oldConf;\n    await updateConf();\n    flow.set(`busy[${id}]`, false);\n}\n\nasync function turnOn() {\n    conf.on = true;\n    await updateConf();  \n}\n\nasync function turnOff() {\n    conf.on = false;\n    await updateConf();  \n}\n\nif(conDeviceId == id) {\n    if ((conDeviceId - oldDeviceId) != 0){\n        await selectionFeedback();\n    }\n    \n    switch(msg.payload.action){\n    case (\"on\") :\n            await turnOn();\n            break;\n    \n    \n    case (\"off\") :\n            await turnOff();\n            break;\n            \n    case (\"brightness_move_up\") :\n            if(conf.on){\n                let brHold = flow.get(`brHold[${id}]`);\n                while(flow.get(`brHold[${id}]`) === \"up\"){\n                    conf.bri=conf.bri + 25;\n                    if(conf.bri > 255){\n                        conf.bri = 255\n                    }\n                    await updateConf();\n                    await delay(1000);\n                    brHold = flow.get(`brHold[${id}]`);\n                }\n            }\n            break;\n            \n    case (\"brightness_move_down\") :\n            if(conf.on){\n                let brHold = flow.get(`brHold[${id}]`);\n                while(brHold === \"down\"){\n                    conf.bri=conf.bri - 25;\n                    if(conf.bri < 1){\n                        conf.bri = 1\n                    }\n                    await updateConf();\n                    await delay(1000);\n                    brHold = flow.get(`brHold[${id}]`);\n                }\n            }\n            break;\n    }\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 1070,
+        "y": 560,
+        "wires": [
+            [
+                "a94ebad08e741ccc"
+            ]
+        ]
+    },
+    {
+        "id": "55fc07394dd41225",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Refresh state",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nconst id = 1;\nvar dummy = {payload: 1,}\n\nasync function refreshState() {\n    while(true) {\n        if(!flow.get(`busy[${id}]`)) {\n            node.send(dummy);\n        }\n        await delay(30000);\n    }\n}\n\nawait refreshState();",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 1050,
+        "y": 880,
+        "wires": [
+            [
+                "8cc449f107d2d21c"
+            ]
+        ]
+    },
+    {
+        "id": "47cc2b3b5f883854",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Refresh state",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nconst id = 1;\nvar dummy = {payload: 1,}\n\nasync function refreshState() {\n    while(true) {\n        if(!flow.get(`busy[${id}]`)) {\n            node.send(dummy);\n        }\n        await delay(30000);\n    }\n}\n\nawait refreshState();",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 1050,
+        "y": 920,
+        "wires": [
+            [
+                "545ceb645c9e1150"
+            ]
+        ]
+    },
+    {
+        "id": "8ffe9fc542874a78",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Refresh state",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nconst id = 3;\nvar dummy = {payload: 1,}\n\nasync function refreshState() {\n    while(true) {\n        if(!flow.get(`busy[${id}]`)) {\n            node.send(dummy);\n        }\n        await delay(30000);\n    }\n}\n\nawait refreshState();",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 1050,
+        "y": 960,
+        "wires": [
+            [
+                "b922185c0c976076"
+            ]
+        ]
+    },
+    {
+        "id": "108b5aaa22f04ac2",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Master power",
+        "func": "const allOn = {\n    payload:{\n      on: true,  \n    },\n};\n\nconst allOff = {\n    payload:{\n      on: false,  \n    },\n};\n\nif(msg.payload.action === \"arrow_left_hold\") {\n    node.send(allOn)\n    for(i=1; i<=4; i++){\n        flow.set(`conf[${i}].on`, false);\n    }\n}\nif(msg.payload.action === \"arrow_right_hold\") {\n    node.send(allOff)\n    for(i=1; i<=4; i++){\n        flow.set(`conf[${i}].on`, false);\n    }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 400,
+        "wires": [
+            [
+                "5b6201599c8ef203",
+                "370f3ed408c125d1",
+                "93b71093102ace50",
+                "7e5a9211bdf043ad"
+            ]
+        ]
+    },
+    {
+        "id": "53af785921fba0fb",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Brightness hold",
+        "func": "id = 0;\n\nif(msg.payload.action === \"brightness_move_up\") {\n    flow.set(`brHold[${id}]`, \"up\");\n} else \nif(msg.payload.action === \"brightness_move_down\") {\n    flow.set(`brHold[${id}]`, \"down\");\n} else {\n    flow.set(`brHold[${id}]`, null);\n}\nreturn(msg)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 560,
+        "wires": [
+            [
+                "f53381df8e4df849"
+            ]
+        ]
+    },
+    {
+        "id": "297ab44efb63a6b8",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Brightness hold",
+        "func": "id = 1;\n\nif(msg.payload.action === \"brightness_move_up\") {\n    flow.set(`brHold[${id}]`, \"up\");\n} else \nif(msg.payload.action === \"brightness_move_down\") {\n    flow.set(`brHold[${id}]`, \"down\");\n} else {\n    flow.set(`brHold[${id}]`, null);\n}\nreturn(msg)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 600,
+        "wires": [
+            [
+                "1eb6d94a565545eb"
+            ]
+        ]
+    },
+    {
+        "id": "0886ad10e7a9b499",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Brightness hold",
+        "func": "id = 2;\n\nif(msg.payload.action === \"brightness_move_up\") {\n    flow.set(`brHold[${id}]`, \"up\");\n} else \nif(msg.payload.action === \"brightness_move_down\") {\n    flow.set(`brHold[${id}]`, \"down\");\n} else {\n    flow.set(`brHold[${id}]`, null);\n}\nreturn(msg)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 640,
+        "wires": [
+            [
+                "c1cbf684d19041f2"
+            ]
+        ]
+    },
+    {
+        "id": "734edda9ccd7aa0d",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "Brightness hold",
+        "func": "id = 3;\n\nif(msg.payload.action === \"brightness_move_up\") {\n    flow.set(`brHold[${id}]`, \"up\");\n} else \nif(msg.payload.action === \"brightness_move_down\") {\n    flow.set(`brHold[${id}]`, \"down\");\n} else {\n    flow.set(`brHold[${id}]`, null);\n}\nreturn(msg)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 680,
+        "wires": [
+            [
+                "be5d4394cf555eb4"
+            ]
+        ]
+    },
+    {
+        "id": "6e4eaa039aa5104d",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "func": "id = 0;\nstate = {\n    on:false,\n    bri:204,\n    colormode:\"rgb\",\n    hex:\"#ff0000\",\n    hue:0,\n    sat:255\n}\n\nif(!lodash.isEqual(msg.payload.state,state)){\n    flow.set(`conf[${id}]`, msg.payload.state);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "lodash",
+                "module": "lodash"
+            }
+        ],
+        "x": 1520,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "abb5cbc1f3a08019",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "func": "id = 1;\nstate = {\n    on:false,\n    bri:204,\n    colormode:\"rgb\",\n    hex:\"#ff0000\",\n    hue:0,\n    sat:255\n}\n\nif(!lodash.isEqual(msg.payload.state,state)){\n    flow.set(`conf[${id}]`, msg.payload.state);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "lodash",
+                "module": "lodash"
+            }
+        ],
+        "x": 1520,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e79092ecb280b2d2",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "func": "id = 2;\nstate = {\n    on:false,\n    bri:204,\n    colormode:\"rgb\",\n    hex:\"#ff0000\",\n    hue:0,\n    sat:255\n}\n\nif(!lodash.isEqual(msg.payload.state,state)){\n    flow.set(`conf[${id}]`, msg.payload.state);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "lodash",
+                "module": "lodash"
+            }
+        ],
+        "x": 1520,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c461d11dfb8cba10",
+        "type": "function",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "func": "id = 3;\nstate = {\n    on:false,\n    bri:204,\n    colormode:\"rgb\",\n    hex:\"#ff0000\",\n    hue:0,\n    sat:255\n}\n\nif(!lodash.isEqual(msg.payload.state,state)){\n    flow.set(`conf[${id}]`, msg.payload.state);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "lodash",
+                "module": "lodash"
+            }
+        ],
+        "x": 1520,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "370f3ed408c125d1",
+        "type": "yeelight-compat-hue-out",
+        "z": "da7359ff5319d330",
+        "name": "strip",
+        "server": "fa20012a10caef85",
+        "x": 1290,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "93b71093102ace50",
+        "type": "yeelight-compat-hue-out",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "server": "36e9258c260a1eae",
+        "x": 1300,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7e5a9211bdf043ad",
+        "type": "yeelight-compat-hue-out",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "server": "63cc4d4410fe3626",
+        "x": 1290,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5b6201599c8ef203",
+        "type": "yeelight-compat-hue-out",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "server": "f79e089bb18fbc7e",
+        "x": 1290,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "82618e441a96a2d3",
+        "type": "debug",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "d33c0c8ea25feaae",
+        "type": "zigbee2mqtt-in",
+        "z": "a8112f1ad24922e2",
+        "name": "Ikea_remote_action",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0xcc86ecfffe9f5b3b",
+        "device_id": "0xcc86ecfffe9f5b3b",
+        "state": "0",
+        "outputAtStartup": true,
+        "filterChanges": false,
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "c86dca6fd5a478e4"
+            ]
+        ]
+    },
+    {
+        "id": "0a78e2a510ef08ef",
+        "type": "function",
+        "z": "a8112f1ad24922e2",
+        "name": "Message Decoder",
+        "func": "var currentDevice = flow.get(\"device\") || 0;\nvar deviceCount = 2;\nif(msg.payload.action === \"brightness_move_down\") {\n  currentDevice ++;\n  if(currentDevice > deviceCount - 1) {\n    currentDevice = 0;\n  }\n  flow.set(\"device\", currentDevice);\n}else if(msg.payload.action === \"brightness_move_up\") {\n  currentDevice --;\n  if(currentDevice < 0) {\n    currentDevice = deviceCount - 1;\n  }\n  flow.set(\"device\", currentDevice);\n}\nmsg.payload.device = currentDevice;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 320,
+        "wires": [
+            [
+                "eb93854c671440c1",
+                "9f921578f891cee2"
+            ]
+        ]
+    },
+    {
+        "id": "eb93854c671440c1",
+        "type": "function",
+        "z": "a8112f1ad24922e2",
+        "name": "Device controller",
+        "func": "id = 0;\nconst init = {\n    on:true,\n    bri:50,\n    colormode:\"ct\",\n    ct:2842,\n    hex:\"#FFAC63\",\n    hue:5111,\n    sat:156,\n    duration:500\n};\n\nconst red = {\n    on: true,\n    bri: 204,\n    colormode:\"rgb\",\n    hex: \"#FF0000\",\n    hue: 0,\n    sat: 0,\n    duration: 80,\n};\nconst curConf = flow.get(`conf[${id}]`) || init;\nconst oldConf = flow.get(`oldConf[${id}]`) || init;\nconst oldConf2 = flow.get(`oldConf1[${id}]`) || init;\nvar conf = curConf;\nvar conDeviceId = flow.get(\"device\")  || 0;\nvar oldDeviceId = flow.get(\"oldDevice\")  || 0;\n\nasync function updateConf() {\n    flow.set(`oldConf1[${id}]`, oldConf);\n    flow.set(`oldConf[${id}]`, conf);\n    flow.set(`conf[${id}]`, conf);\n    msg.payload = conf;\n    await node.send(msg);\n    await delay(10);\n}\n\nasync function selectionFeedback() {\n    flow.set(\"oldDevice\", id);\n    flow.set(`busy[${id}]`, true);\n    conf=red;\n    await updateConf()\n    await delay(500);\n    conf=oldConf;\n    await updateConf();\n    flow.set(`busy[${id}]`, false);\n}\n\nasync function turnOn() {\n    if (!conf.on && conf.bri === 255) {\n        conf.bri = oldConf2.bri;\n    }\n    if (!conf.on) {\n        conf.on = true;\n        await updateConf();\n        return\n    } \n    if (conf.bri != 255) {\n        conf.bri = 255;\n        await updateConf();\n        return;\n    }\n}\n\nasync function turnOff() {\n    conf.on = false;\n    await updateConf();  \n}\n\nif(conDeviceId === id){\n    if ((conDeviceId - oldDeviceId) != 0){\n        await selectionFeedback();\n    }\n    \n    switch(msg.payload.action){\n        case (\"on\") :\n            await turnOn();\n            break;\n    \n    \n        case (\"off\") :\n            await turnOff();\n            break;\n    }\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "21687976378ca168"
+            ]
+        ]
+    },
+    {
+        "id": "21687976378ca168",
+        "type": "yeelight-compat-hue-out",
+        "z": "a8112f1ad24922e2",
+        "name": "",
+        "server": "286106aefd1f169a",
+        "x": 880,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9f921578f891cee2",
+        "type": "function",
+        "z": "a8112f1ad24922e2",
+        "name": "Device controller",
+        "func": "id = 1;\nconst init = {\n    on:true,\n    bri:50,\n    colormode:\"ct\",\n    ct:2842,\n    hex:\"#FFAC63\",\n    hue:5111,\n    sat:156,\n    duration:500\n};\n\nconst red = {\n    on: true,\n    bri: 204,\n    colormode:\"rgb\",\n    hex: \"#FF0000\",\n    hue: 0,\n    sat: 0,\n    duration: 80,\n};\nconst curConf = flow.get(`conf[${id}]`) || init;\nconst oldConf = flow.get(`oldConf[${id}]`) || init;\nconst oldConf2 = flow.get(`oldConf1[${id}]`) || init;\nvar conf = curConf;\nvar conDeviceId = flow.get(\"device\")  || 0;\nvar oldDeviceId = flow.get(\"oldDevice\")  || 0;\n\nasync function updateConf() {\n    flow.set(`oldConf1[${id}]`, oldConf);\n    flow.set(`oldConf[${id}]`, conf);\n    flow.set(`conf[${id}]`, conf);\n    msg.payload = conf;\n    await node.send(msg);\n    await delay(10);\n}\n\nasync function selectionFeedback() {\n    flow.set(\"oldDevice\", id);\n    flow.set(`busy[${id}]`, true);\n    conf=red;\n    await updateConf()\n    await delay(500);\n    conf=oldConf;\n    await updateConf();\n    flow.set(`busy[${id}]`, false);\n}\nasync function turnOn() {\n    if (!conf.on && conf.bri === 255) {\n        conf.bri = oldConf2.bri;\n    }\n    if (!conf.on) {\n        conf.on = true;\n        await updateConf();\n        return\n    } \n    if (conf.bri != 255) {\n        conf.bri = 255;\n        await updateConf();\n        return;\n    }\n}\n\nasync function turnOff() {\n    conf.on = false;\n    await updateConf();  \n}\n\nif(conDeviceId === id){\n    if ((conDeviceId - oldDeviceId) != 0){\n        await selectionFeedback();\n    }\n    \n    switch(msg.payload.action){\n        case (\"on\") :\n            await turnOn();\n            break;\n    \n    \n        case (\"off\") :\n            await turnOff();\n            break;\n    }\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [
+                "ab08f6ec33eb0a22"
+            ]
+        ]
+    },
+    {
+        "id": "ab08f6ec33eb0a22",
+        "type": "yeelight-compat-hue-out",
+        "z": "a8112f1ad24922e2",
+        "name": "",
+        "server": "cdd79b9158822142",
+        "x": 880,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d13ae159ad1de733",
+        "type": "yeelight-compat-hue-state",
+        "z": "a8112f1ad24922e2",
+        "name": "",
+        "server": "286106aefd1f169a",
+        "x": 880,
+        "y": 420,
+        "wires": [
+            [
+                "ecc3a6af53dcc96b"
+            ]
+        ]
+    },
+    {
+        "id": "768bc01f75f34acc",
+        "type": "yeelight-compat-hue-state",
+        "z": "a8112f1ad24922e2",
+        "name": "",
+        "server": "cdd79b9158822142",
+        "x": 880,
+        "y": 460,
+        "wires": [
+            [
+                "8a9b06463365eba6"
+            ]
+        ]
+    },
+    {
+        "id": "c86dca6fd5a478e4",
+        "type": "delay",
+        "z": "a8112f1ad24922e2",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "0.8",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 320,
+        "wires": [
+            [
+                "0a78e2a510ef08ef"
+            ]
+        ]
+    },
+    {
+        "id": "f5de26682c881138",
+        "type": "function",
+        "z": "a8112f1ad24922e2",
+        "name": "refreshState",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nconst id = 0;\nvar dummy = {payload: 1,}\n\nasync function refreshState() {\n    while(true) {\n        if(!(flow.get(`busy[${id}]`) || false)) {\n            node.send(dummy);\n        }\n        await delay(30000);\n    }\n}\n\nawait refreshState();",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 730,
+        "y": 420,
+        "wires": [
+            [
+                "d13ae159ad1de733"
+            ]
+        ]
+    },
+    {
+        "id": "cc294ce4ba71ca2c",
+        "type": "function",
+        "z": "a8112f1ad24922e2",
+        "name": "refreshState",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nconst id = 1;\nvar dummy = {payload: 1,}\n\nasync function refreshState() {\n    while(true) {\n        if(!(flow.get(`busy[${id}]`) || false)) {\n            node.send(dummy);\n        }\n        await delay(30000);\n    }\n}\n\nawait refreshState();",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 730,
+        "y": 460,
+        "wires": [
+            [
+                "768bc01f75f34acc"
+            ]
+        ]
+    },
+    {
+        "id": "ecc3a6af53dcc96b",
+        "type": "function",
+        "z": "a8112f1ad24922e2",
+        "name": "",
+        "func": "id = 0;\nstate = {\n    on:false,\n    bri:204,\n    colormode:\"rgb\",\n    hex:\"#ff0000\",\n    hue:0,\n    sat:255\n}\n\nif(!lodash.isEqual(msg.payload.state,state)){\n    flow.set(`conf[${id}]`, msg.payload.state);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "lodash",
+                "module": "lodash"
+            }
+        ],
+        "x": 1020,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a9b06463365eba6",
+        "type": "function",
+        "z": "a8112f1ad24922e2",
+        "name": "",
+        "func": "id = 1;\nstate = {\n    on:false,\n    bri:204,\n    colormode:\"rgb\",\n    hex:\"#ff0000\",\n    hue:0,\n    sat:255\n}\n\nif(!lodash.isEqual(msg.payload.state,state)){\n    flow.set(`conf[${id}]`, msg.payload.state);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "lodash",
+                "module": "lodash"
+            }
+        ],
+        "x": 1020,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1e734b94866b58c",
+        "type": "zigbee2mqtt-out",
+        "z": "4391f46e3816b1fb",
+        "name": "Smart socket",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0x84fd27fffe9f718e",
+        "device_id": "0x84fd27fffe9f718e",
+        "command": "state",
+        "commandType": "z2m_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transition": 0,
+        "x": 900,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "96b5eac56728b003",
+        "type": "inject",
+        "z": "4391f46e3816b1fb",
+        "name": "Week Time Trigger",
+        "props": [
+            {
+                "p": "payload.state",
+                "v": "ON",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "57 22 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 480,
+        "wires": [
+            [
+                "80b11016e7c791d3",
+                "bea343745ba1f504"
+            ]
+        ]
+    },
+    {
+        "id": "80b11016e7c791d3",
+        "type": "function",
+        "z": "4391f46e3816b1fb",
+        "name": "Off Timer 120s",
+        "func": "var msgOn ={\n    payload: {\n        state: \"ON\"\n    }\n};\n\nvar msgOff ={\n    payload: {\n        state: \"OFF\"\n    }\n};\n\nnode.send(msgOn)\nawait delay(120000)\nnode.send(msgOff)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 380,
+        "y": 480,
+        "wires": [
+            [
+                "e1e734b94866b58c",
+                "bea343745ba1f504"
+            ]
+        ]
+    },
+    {
+        "id": "bea343745ba1f504",
+        "type": "debug",
+        "z": "4391f46e3816b1fb",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2df35e0a8fe9b14c",
+        "type": "trigger",
+        "z": "4391f46e3816b1fb",
+        "name": "Watchdog Timer 125s",
+        "op1": "",
+        "op2": "{\"state\":\"OFF\"}",
+        "op1type": "nul",
+        "op2type": "json",
+        "duration": "125",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "OFF",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 620,
+        "y": 400,
+        "wires": [
+            [
+                "e1e734b94866b58c",
+                "bea343745ba1f504"
+            ]
+        ]
+    },
+    {
+        "id": "74d579c28a670890",
+        "type": "zigbee2mqtt-in",
+        "z": "4391f46e3816b1fb",
+        "name": "Smart socket",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0x84fd27fffe9f718e",
+        "device_id": "0x84fd27fffe9f718e",
+        "state": "0",
+        "outputAtStartup": true,
+        "filterChanges": false,
+        "x": 90,
+        "y": 400,
+        "wires": [
+            [
+                "2e96a0e20a336421",
+                "bea343745ba1f504"
+            ]
+        ]
+    },
+    {
+        "id": "2e96a0e20a336421",
+        "type": "function",
+        "z": "4391f46e3816b1fb",
+        "name": "Convert payload",
+        "func": "switch(msg.payload.state) {\n  case \"ON\": msg.payload = \"ON\";\n             break;\n  case \"OFF\": msg.payload = \"OFF\";\n             break;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 400,
+        "wires": [
+            [
+                "2df35e0a8fe9b14c"
+            ]
+        ]
+    },
+    {
+        "id": "39d208a829d4c1f9",
+        "type": "inject",
+        "z": "4391f46e3816b1fb",
+        "name": "Week Time Trigger",
+        "props": [
+            {
+                "p": "payload.state",
+                "v": "ON",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 07 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 620,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d18a47c40ee98cef",
+        "type": "inject",
+        "z": "4391f46e3816b1fb",
+        "name": "Week Time Trigger",
+        "props": [
+            {
+                "p": "payload.state",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 18 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 620,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c694cb4515a1b937",
+        "type": "inject",
+        "z": "4391f46e3816b1fb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "toggle",
+        "payloadType": "str",
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "e1e734b94866b58c"
+            ]
+        ]
+    },
+    {
+        "id": "03ecf98a83ae9167",
+        "type": "function",
+        "z": "766377350dfaef82",
+        "name": "",
+        "func": "switch (msg.payload.occupancy) {\n    case (true) :\n        node.send({\n            payload: {\n                state: \"ON\"\n            }});\n            break;\n    case (false) :\n            node.send({\n            payload: {\n                state: \"OFF\"\n            }});\n            break\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 620,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ac4b78c6fc5b285",
+        "type": "zigbee2mqtt-out",
+        "z": "766377350dfaef82",
+        "name": "",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0xe0798dfffeddd988",
+        "device_id": "0xe0798dfffeddd988",
+        "command": "state",
+        "commandType": "z2m_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transition": 0,
+        "x": 900,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "7218181390f14cec",
+        "type": "inject",
+        "z": "766377350dfaef82",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "state",
+        "payloadType": "str",
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "bf0b54e5a1dc05c2"
+            ]
+        ]
+    },
+    {
+        "id": "e08e651287ea1cd0",
+        "type": "debug",
+        "z": "766377350dfaef82",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "bf0b54e5a1dc05c2",
+        "type": "zigbee2mqtt-get",
+        "z": "766377350dfaef82",
+        "name": "",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0xe0798dfffeddd988",
+        "device_id": "0xe0798dfffeddd988",
+        "state": "0",
+        "x": 680,
+        "y": 440,
+        "wires": [
+            [
+                "e08e651287ea1cd0"
+            ]
+        ]
+    },
+    {
+        "id": "59b9e72886e7599b",
+        "type": "zigbee2mqtt-in",
+        "z": "766377350dfaef82",
+        "name": "",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0xe0798dfffeddd988",
+        "device_id": "0xe0798dfffeddd988",
+        "state": "0",
+        "outputAtStartup": true,
+        "filterChanges": false,
+        "x": 610,
+        "y": 220,
+        "wires": [
+            [
+                "e08e651287ea1cd0"
+            ]
+        ]
+    },
+    {
+        "id": "f572a29d74f6d2d1",
+        "type": "debug",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "75ddb2a19b49762a",
+        "type": "ui_template",
+        "z": "e6646c01966be1ef",
+        "group": "25466c0772f68d25",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div layout=\"row\" layout-align=\"start center\">\n  <span flex>Sensor</span>\n  <span flex>State</span>\n</div>\n<div layout=\"row\" layout-align=\"start center\">\n  <span flex style=\"color: black\">Main entrance</span>\n  <span flex style=\"color: black\">{{msg.payload.mainEntrDoor}}</span>\n </div>\n<div layout=\"row\" layout-align=\"start center\">\n  <span flex style=\"color: black\">Living room balcony</span>\n  <span flex style=\"color: black\">{{msg.payload.balcDoorLivRoom}}</span>\n</div>\n<div layout=\"row\" layout-align=\"start center\">\n  <span flex style=\"color: black\">Living room window</span>\n  <span flex style=\"color: black\">{{msg.payload.windowLivRoom}}</span>\n</div>\n<div layout=\"row\" layout-align=\"start center\">\n  <span flex style=\"color: black\">Bedroom balcony</span>\n  <span flex style=\"color: black\">{{msg.payload.balcDoorBedroom}}</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1080,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5afc7190f2fd90c",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "if(msg.payload.contact)\n    flow.set(\"boolMainEntrDoor\", false)\nelse\n    flow.set(\"boolMainEntrDoor\", true)\nreturn(msg)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"mainEntrDoor\", \"null\")",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 240,
+        "wires": [
+            [
+                "35a8cd322586476e"
+            ]
+        ]
+    },
+    {
+        "id": "7ae4266952c8da64",
+        "type": "zigbee2mqtt-in",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "",
+        "device_id": "0xa4c138b09a595a55",
+        "state": "0",
+        "outputAtStartup": true,
+        "filterChanges": false,
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "c5afc7190f2fd90c"
+            ]
+        ]
+    },
+    {
+        "id": "5e9775e29c20c9e6",
+        "type": "zigbee2mqtt-in",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0xa4c13867b6a3c94e",
+        "device_id": "0xa4c13867b6a3c94e",
+        "state": "0",
+        "outputAtStartup": true,
+        "filterChanges": false,
+        "x": 240,
+        "y": 300,
+        "wires": [
+            [
+                "fa85777617bf57e2"
+            ]
+        ]
+    },
+    {
+        "id": "fa85777617bf57e2",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "if(msg.payload.contact)\n    flow.set(\"boolBalcDoorLivRoom\", false)\nelse\n    flow.set(\"boolBalcDoorLivRoom\",  true)\n    \nreturn(msg)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"balcDoorLivRoom\", \"null\")",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 300,
+        "wires": [
+            [
+                "9cef79f35a9d91da"
+            ]
+        ]
+    },
+    {
+        "id": "caf3a323e8341180",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "msg.payload = {\n    balcDoorLivRoom: \"\",\n    mainEntrDoor: \"\",\n    balcDoorBedroom: \"\",\n    windowLivRoom: \"\"\n}\nmsg.payload.balcDoorLivRoom = flow.get(\"balcDoorLivRoom\")\nmsg.payload.balcDoorBedroom = flow.get(\"balcDoorBedroom\")\nmsg.payload.windowLivRoom = flow.get(\"windowLivRoom\")\nmsg.payload.mainEntrDoor = flow.get(\"mainEntrDoor\")\nreturn(msg)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 240,
+        "wires": [
+            [
+                "75ddb2a19b49762a",
+                "21ec36c76328dbcf"
+            ]
+        ]
+    },
+    {
+        "id": "ae52ea00eb8bbe1d",
+        "type": "trigger",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-20",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 650,
+        "y": 180,
+        "wires": [
+            [
+                "caf3a323e8341180"
+            ]
+        ]
+    },
+    {
+        "id": "fd1902eae984eedb",
+        "type": "inject",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 440,
+        "y": 180,
+        "wires": [
+            [
+                "ae52ea00eb8bbe1d"
+            ]
+        ]
+    },
+    {
+        "id": "708c480293e75a57",
+        "type": "ui_switch",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "label": "Master",
+        "tooltip": "",
+        "group": "25466c0772f68d25",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1070,
+        "y": 180,
+        "wires": [
+            [
+                "568260ef22106ff0"
+            ]
+        ]
+    },
+    {
+        "id": "568260ef22106ff0",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "if(msg.payload)\n    flow.set(\"alarmMasterArm\", true)\nelse\n    flow.set(\"alarmMasterArm\", false)\n\nreturn(msg)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"mainEntrDoor\", \"null\")",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 180,
+        "wires": [
+            [
+                "c510b92734995834"
+            ]
+        ]
+    },
+    {
+        "id": "0ba6b0c03a6e0f67",
+        "type": "ui_text",
+        "z": "e6646c01966be1ef",
+        "group": "25466c0772f68d25",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload.alarmState}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1610,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c510b92734995834",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "msg.payload = {\n    alarmState: \"\"\n}\nif (flow.get(\"alarmMasterArm\"))\n    msg.payload.alarmState = \"Armed\"\nelse\n    msg.payload.alarmState = \"Disarmed\"\n\nreturn(msg)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 180,
+        "wires": [
+            [
+                "0ba6b0c03a6e0f67"
+            ]
+        ]
+    },
+    {
+        "id": "14465be4eaa0a446",
+        "type": "zigbee2mqtt-in",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0xa4c13838c51955ed",
+        "device_id": "0xa4c13838c51955ed",
+        "state": "0",
+        "outputAtStartup": true,
+        "filterChanges": false,
+        "x": 240,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97e0cd919e1eb27a",
+        "type": "zigbee2mqtt-out",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0xa4c13838c51955ed",
+        "device_id": "0xa4c13838c51955ed",
+        "command": "state",
+        "commandType": "z2m_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transition": 0,
+        "x": 1000,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "603e5e378b3dc3be",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "if(msg.payload.contact)\n    flow.set(\"boolWindowLivRoom\", false)\nelse\n    flow.set(\"boolWindowLivRoom\",  true)\n    \nreturn(msg)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"balcDoorLivRoom\", \"null\")",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 420,
+        "wires": [
+            [
+                "6edcc45c0dc9303e"
+            ]
+        ]
+    },
+    {
+        "id": "d7691eed3cb97782",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "if(msg.payload.contact)\n    flow.set(\"boolBalcDoorBedroom\", false)\nelse\n    flow.set(\"boolBalcDoorBedroom\",  true)\n    \nreturn(msg)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"balcDoorLivRoom\", \"null\")",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 360,
+        "wires": [
+            [
+                "4726c24dca179fbe"
+            ]
+        ]
+    },
+    {
+        "id": "3d2de2e63d1427a4",
+        "type": "zigbee2mqtt-in",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0xa4c13881d955d0fd",
+        "device_id": "0xa4c13881d955d0fd",
+        "state": "0",
+        "outputAtStartup": true,
+        "filterChanges": false,
+        "x": 240,
+        "y": 360,
+        "wires": [
+            [
+                "d7691eed3cb97782"
+            ]
+        ]
+    },
+    {
+        "id": "d6b064337e63d793",
+        "type": "zigbee2mqtt-in",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0xa4c138644f4222f8",
+        "device_id": "0xa4c138644f4222f8",
+        "state": "0",
+        "outputAtStartup": true,
+        "filterChanges": false,
+        "x": 240,
+        "y": 420,
+        "wires": [
+            [
+                "603e5e378b3dc3be"
+            ]
+        ]
+    },
+    {
+        "id": "448b054efc40da13",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "sirenController",
+        "func": "flow.set(\"alarmBusy\", true)\n\nmsg.payload = {\n    \"ringtone\": msg.payload.ringtone,\n    \"type\": msg.payload.type,\n    \"volume\": msg.payload.volume,\n}\n\nduration = msg.payload.duration;\n//node.send(msg)\n//await delay(140)\n\nmsg.payload = {\n    \"alarm\": \"ON\"\n}\n\nnode.send(msg)\n\nawait delay((3)*1000)\n\nmsg.payload = {\n    \"alarm\": \"OFF\"\n}\nawait delay(120)\nflow.set(\"alarmBusy\", false)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "delay",
+                "module": "delay"
+            }
+        ],
+        "x": 760,
+        "y": 560,
+        "wires": [
+            [
+                "97e0cd919e1eb27a",
+                "f572a29d74f6d2d1"
+            ]
+        ]
+    },
+    {
+        "id": "f635b24317668767",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "windowOpenAlarm",
+        "func": "\n\n\n\nvar balcDoorLivRoom = flow.get(\"boolBalcDoorLivRoom\")\nvar balcDoorBedroom = flow.get(\"boolBalcDoorBedroom\")\nvar windowLivRoom = flow.get(\"boolWindowLivRoom\")\nvar mainEntrDoor = flow.get(\"boolMainEntrDoor\")\nvar alarmBusy = flow.get(\"alarmBusy\")\n\nif(!alarmBusy && mainEntrDoor && (windowLivRoom || windowLivRoom || balcDoorBedroom || balcDoorLivRoom))\n{\n    msg.payload = {\n        \"ringtone\": \"melody5\",\n        \"type\": \"normal\",\n        \"volume\": \"middle\",\n        \"duration\": 1\n}\n    node.send(msg);\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 560,
+        "wires": [
+            [
+                "448b054efc40da13"
+            ]
+        ]
+    },
+    {
+        "id": "35a8cd322586476e",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "state = flow.get(\"boolMainEntrDoor\")\nif(state)\n    flow.set(\"mainEntrDoor\", \"Open\")\nelse\n    flow.set(\"mainEntrDoor\", \"Closed\")\nreturn(msg)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"mainEntrDoor\", \"null\")",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 240,
+        "wires": [
+            [
+                "caf3a323e8341180",
+                "f635b24317668767"
+            ]
+        ]
+    },
+    {
+        "id": "9cef79f35a9d91da",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "state = flow.get(\"boolBalcDoorLivRoom\")\nif(state)\n    flow.set(\"balcDoorLivRoom\", \"Open\")\nelse\n    flow.set(\"balcDoorLivRoom\",  \"Closed\")\n    \nreturn(msg)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"balcDoorLivRoom\", \"null\")",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 300,
+        "wires": [
+            [
+                "caf3a323e8341180"
+            ]
+        ]
+    },
+    {
+        "id": "6edcc45c0dc9303e",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "state = flow.get(\"boolWindowLivRoom\")\nif(state)\n    flow.set(\"windowLivRoom\", \"Open\")\nelse\n    flow.set(\"windowLivRoom\",  \"Closed\")\n    \nreturn(msg)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"balcDoorLivRoom\", \"null\")",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 420,
+        "wires": [
+            [
+                "caf3a323e8341180"
+            ]
+        ]
+    },
+    {
+        "id": "4726c24dca179fbe",
+        "type": "function",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "func": "state = flow.get(\"boolBalcDoorBedroom\")\nif(state)\n    flow.set(\"balcDoorBedroom\", \"Open\")\nelse\n    flow.set(\"balcDoorBedroom\",  \"Closed\")\n    \nreturn(msg)",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"balcDoorLivRoom\", \"null\")",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 360,
+        "wires": [
+            [
+                "caf3a323e8341180"
+            ]
+        ]
+    },
+    {
+        "id": "21ec36c76328dbcf",
+        "type": "debug",
+        "z": "e6646c01966be1ef",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "189961f2a0e1b561",
+        "type": "ui_gauge",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "group": "25466c0772f68d25",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "gauge",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "33",
+        "seg2": "66",
+        "className": "",
+        "x": 1130,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "35e8bc0fa2c98997",
+        "type": "inject",
+        "z": "e6646c01966be1ef",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "57",
+        "payloadType": "num",
+        "x": 970,
+        "y": 320,
+        "wires": [
+            [
+                "189961f2a0e1b561"
+            ]
+        ]
+    }
+]
