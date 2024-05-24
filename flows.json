@@ -905,6 +905,16 @@
         "wires": []
     },
     {
+        "id": "8e3b6c840c287206",
+        "type": "comment",
+        "z": "da7359ff5319d330",
+        "name": "",
+        "info": "",
+        "x": 580,
+        "y": 360,
+        "wires": []
+    },
+    {
         "id": "d33c0c8ea25feaae",
         "type": "zigbee2mqtt-in",
         "z": "a8112f1ad24922e2",
