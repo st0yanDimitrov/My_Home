@@ -26,7 +26,7 @@
     {
         "id": "766377350dfaef82",
         "type": "tab",
-        "label": "Flow 4",
+        "label": "Incubator",
         "disabled": false,
         "info": "",
         "env": []
@@ -306,6 +306,52 @@
         "className": "",
         "visible": "true",
         "disabled": "false"
+    },
+    {
+        "id": "6ef6b991d03106d7",
+        "type": "influxdb",
+        "hostname": "192.168.1.100",
+        "port": "8086",
+        "protocol": "http",
+        "database": "incubator",
+        "name": "influxdb-1",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.8-flux",
+        "url": "http://192.168.1.100:8086",
+        "timeout": "10",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "12400d106d0f8ca7",
+        "type": "mqtt-broker",
+        "name": "1",
+        "broker": "192.168.1.100",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
     },
     {
         "id": "525bf94235e166eb",
@@ -1384,78 +1430,48 @@
         ]
     },
     {
-        "id": "03ecf98a83ae9167",
-        "type": "function",
-        "z": "766377350dfaef82",
-        "name": "",
-        "func": "switch (msg.payload.occupancy) {\n    case (true) :\n        node.send({\n            payload: {\n                state: \"ON\"\n            }});\n            break;\n    case (false) :\n            node.send({\n            payload: {\n                state: \"OFF\"\n            }});\n            break\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "delay",
-                "module": "delay"
-            }
-        ],
-        "x": 620,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4ac4b78c6fc5b285",
-        "type": "zigbee2mqtt-out",
+        "id": "c03ef8d40e3d1d6b",
+        "type": "zigbee2mqtt-in",
         "z": "766377350dfaef82",
         "name": "",
         "server": "c8d019173ba0589d",
-        "friendly_name": "0xe0798dfffeddd988",
-        "device_id": "0xe0798dfffeddd988",
-        "command": "state",
-        "commandType": "z2m_cmd",
-        "payload": "payload",
-        "payloadType": "msg",
-        "transition": 0,
-        "x": 900,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "7218181390f14cec",
-        "type": "inject",
-        "z": "766377350dfaef82",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "state",
-        "payloadType": "str",
-        "x": 310,
-        "y": 280,
+        "friendly_name": "0x00124b0022d2f3f1",
+        "device_id": "0x00124b0022d2f3f1",
+        "state": "0",
+        "outputAtStartup": true,
+        "filterChanges": false,
+        "x": 480,
+        "y": 240,
         "wires": [
             [
-                "bf0b54e5a1dc05c2"
+                "69af8b36dfbd0100",
+                "233b5e811e3b9324"
             ]
         ]
     },
     {
-        "id": "e08e651287ea1cd0",
+        "id": "69af8b36dfbd0100",
+        "type": "influxdb out",
+        "z": "766377350dfaef82",
+        "influxdb": "6ef6b991d03106d7",
+        "name": "",
+        "measurement": "incubator",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "incubator",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 790,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "233b5e811e3b9324",
         "type": "debug",
         "z": "766377350dfaef82",
-        "name": "",
+        "name": "debug 2",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1463,43 +1479,141 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 930,
-        "y": 280,
+        "x": 720,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "bf0b54e5a1dc05c2",
-        "type": "zigbee2mqtt-get",
+        "id": "af342ceff8e46a71",
+        "type": "zigbee2mqtt-out",
         "z": "766377350dfaef82",
         "name": "",
         "server": "c8d019173ba0589d",
-        "friendly_name": "0xe0798dfffeddd988",
-        "device_id": "0xe0798dfffeddd988",
-        "state": "0",
-        "x": 680,
-        "y": 440,
+        "friendly_name": "0x00124b0026b7ded5",
+        "device_id": "0x00124b0026b7ded5",
+        "command": "state",
+        "commandType": "z2m_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transition": 0,
+        "x": 760,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "11e4e95836cc9eac",
+        "type": "zigbee2mqtt-out",
+        "z": "766377350dfaef82",
+        "name": "",
+        "server": "c8d019173ba0589d",
+        "friendly_name": "0xa4c1385fbc7773dd",
+        "device_id": "0xa4c1385fbc7773dd",
+        "command": "state",
+        "commandType": "z2m_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transition": 0,
+        "x": 760,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "41a5ecca5f116ba3",
+        "type": "inject",
+        "z": "766377350dfaef82",
+        "name": "Week Time Trigger ON",
+        "props": [
+            {
+                "p": "payload.state",
+                "v": "ON",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 08 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 400,
         "wires": [
             [
-                "e08e651287ea1cd0"
+                "11e4e95836cc9eac"
             ]
         ]
     },
     {
-        "id": "59b9e72886e7599b",
-        "type": "zigbee2mqtt-in",
+        "id": "1ef14bfab5ba1e91",
+        "type": "inject",
         "z": "766377350dfaef82",
-        "name": "",
-        "server": "c8d019173ba0589d",
-        "friendly_name": "0xe0798dfffeddd988",
-        "device_id": "0xe0798dfffeddd988",
-        "state": "0",
-        "outputAtStartup": true,
-        "filterChanges": false,
-        "x": 610,
-        "y": 220,
+        "name": "Week Time Trigger OFF",
+        "props": [
+            {
+                "p": "payload.state",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 20 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 440,
         "wires": [
             [
-                "e08e651287ea1cd0"
+                "11e4e95836cc9eac"
+            ]
+        ]
+    },
+    {
+        "id": "5f3ae5589576298a",
+        "type": "inject",
+        "z": "766377350dfaef82",
+        "name": "Trigger every hour",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 340,
+        "wires": [
+            [
+                "cad94119179436a0"
+            ]
+        ]
+    },
+    {
+        "id": "cad94119179436a0",
+        "type": "trigger",
+        "z": "766377350dfaef82",
+        "name": "On for 5 minutes then OFF",
+        "op1": "{\"state\": \"ON\"}",
+        "op2": "{\"state\": \"OFF\"}",
+        "op1type": "json",
+        "op2type": "json",
+        "duration": "5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "af342ceff8e46a71"
             ]
         ]
     },
